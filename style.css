@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+
+:root {
+  --color-background: #f7c6eb;
+  --color: #f4f1d2;
+
+  /* Whac a Mole */
+  --color--button-mole: #0790ec;
+  --color-background-information-mole: #6495ed;
+  --color-game-over: #f66571;
+
+  /* Memory Game */
+  --color--button-memory: #ff6000;
+  --color-background-information-memory: #fd7a28;
+
+  /* Stone, paper, scissor */
+  --color-button-SPS: #e949eb;
+  --color-background-information-sps: #ffffff;
+  --color-background-sps: #e26ee4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Truculenta', sans-serif;
+  font-optical-sizing: auto;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('https://w11.es/wp-content/uploads/2022/10/Fondo-2-en-4K-Windows-11.jpg');
+  background-size: contain;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+}

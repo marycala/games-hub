@@ -1,0 +1,201 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.game {
+  width: 100%;
+  background-image: url('https://cdn.pixabay.com/photo/2016/07/08/18/00/lawn-1504945_960_720.jpg');
+  display: flex;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.cartoon-normal {
+  width: 320px;
+  height: 241px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.hill {
+  width: 320px;
+  height: 110px;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  z-index: 9999;
+}
+
+.mole-head {
+  width: 188px;
+  height: 178px;
+  position: absolute;
+  left: 54.5px;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.head-visible {
+  animation: head-visible 0.25s forwards;
+}
+
+@keyframes head-visible {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.head-hidden {
+  animation: head-hidden 0.25s forwards;
+}
+
+@keyframes head-hidden {
+  0% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+.head-whacked {
+  cursor: grabbing;
+}
+
+.information {
+  width: 100%;
+  background-color: #6495ed;
+  border-bottom: 2px solid #645ded;
+  box-shadow: 0 2px 4px #00000066;
+  color: white;
+  display: flex;
+  font-size: 30px;
+  padding: 10px 20px;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  margin: 20px 0 20px 0;
+  gap: 10px;
+}
+
+.buttonsMole {
+  width: 100px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.timer,
+.score-holder {
+  flex: 1 0 0;
+  text-align: center;
+}
+
+.game-over {
+  background-color: var(--color-game-over);
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.game-over-hidden {
+  display: none;
+}
+
+@media (max-width: 1189px) {
+  .cartoon-normal {
+    width: 213.33px;
+    height: 161px;
+  }
+  .hill {
+    width: 213.33px;
+    height: 73.33px;
+  }
+  .mole-head {
+    width: 125.33px;
+    height: 118.67px;
+    left: 36.33px;
+  }
+  .buttonsMole {
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 940px) {
+  .cartoon-normal {
+    width: 160px;
+    height: 120.5px;
+  }
+  .hill {
+    width: 160px;
+    height: 55px;
+  }
+  .mole-head {
+    width: 94px;
+    height: 89px;
+    left: 27.25px;
+  }
+}
+
+@media (max-width: 730px) {
+  .game {
+    padding-top: 0;
+    gap: 5px;
+  }
+  .information {
+    height: 50px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 479px) {
+  header {
+    gap: 0;
+  }
+  .game-over {
+    width: auto;
+    font-size: 18px;
+    padding: 5px;
+  }
+  .buttons {
+    margin: 10px 0 10px 0;
+  }
+  .buttonsMole {
+    width: 80px;
+    padding: 2px;
+    font-size: 14px;
+    margin: 0;
+  }
+  .information {
+    height: 30px;
+  }
+}

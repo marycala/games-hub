@@ -1,0 +1,125 @@
+.ppt-information {
+  width: 100%;
+  margin: 100px 0 50px 0;
+}
+
+.score-ppt {
+  width: 100%;
+  height: 60px;
+  background-color: var(--color-background-information-sps);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.game-sps {
+  width: 50%;
+  height: 300px;
+  margin: auto;
+  background-color: var(--color-background-sps);
+  border: 2px solid black;
+}
+
+.options {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#stone {
+  scale: 3.5;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+#stone:hover {
+  scale: 4.5;
+}
+
+#paper {
+  scale: 3.5;
+  cursor: pointer;
+}
+
+#paper:hover {
+  scale: 4.5;
+}
+
+#scissor {
+  scale: 3.5;
+  cursor: pointer;
+}
+
+#scissor:hover {
+  scale: 4.5;
+}
+
+.result {
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  #stone {
+    scale: 2.5;
+    cursor: pointer;
+  }
+
+  #stone:hover {
+    scale: 3.5;
+  }
+
+  #paper {
+    scale: 2.5;
+    cursor: pointer;
+  }
+
+  #paper:hover {
+    scale: 3.5;
+  }
+
+  #scissor {
+    scale: 2.5;
+    cursor: pointer;
+  }
+
+  #scissor:hover {
+    scale: 3.5;
+  }
+}
+
+@media (max-width: 600px) {
+  #stone {
+    scale: 1.5;
+    cursor: pointer;
+  }
+
+  #stone:hover {
+    scale: 2.5;
+  }
+
+  #paper {
+    scale: 1.5;
+    cursor: pointer;
+  }
+
+  #paper:hover {
+    scale: 2.5;
+  }
+
+  #scissor {
+    scale: 1.5;
+    cursor: pointer;
+  }
+
+  #scissor:hover {
+    scale: 2.5;
+  }
+}
+
+@media (max-width: 430px) {
+  .game-sps {
+    height: 100px;
+  }
+}
