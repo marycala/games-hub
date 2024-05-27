@@ -76,7 +76,7 @@
   }
 }
 
-@media (max-width: 495px) {
+@media (max-width: 514px) {
   .memory-game {
     grid-template-columns: repeat(auto-fill, 85px);
     flex-wrap: wrap;
